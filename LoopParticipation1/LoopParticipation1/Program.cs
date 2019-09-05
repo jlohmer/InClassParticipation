@@ -10,6 +10,16 @@ namespace LoopParticipation1
     {
         static void Main(string[] args)
         {
+            
+            Random rand = new Random();
+            for (int i = 1; i <6; i++)
+            { int toss = rand.Next(1, 3);
+                Console.WriteLine(toss);
+
+            }
+            
+            
+            //Problem 1 - Add all #'s from 1 to 100
             int counter;
             int sum = 0;
 
