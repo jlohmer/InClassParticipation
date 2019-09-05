@@ -18,6 +18,38 @@ namespace LoopParticipation1
                 sum = sum + counter;
             }
             Console.WriteLine(sum);
+
+
+            // Problem 2 - Ask the user if they want to iterate
+
+            string answer = string.Empty;
+            counter = 0;
+
+            Console.WriteLine("Do you want to iterate again?");
+            answer = Console.ReadLine();
+
+            while(answer.ToLower() != "no")
+            {
+                Console.WriteLine("Do you want to iterate again?");
+                answer = Console.ReadLine();
+                counter++;
+            }
+
+            Console.WriteLine(counter);
+
+            counter = 0;
+            answer = string.Empty;
+
+            do
+            {
+                Console.WriteLine("Do you want to iterate again?");
+                answer = Console.ReadLine().ToLower;
+                counter++;
+            } while (answer.ToLower() != "no");
+            counter--;
+
+            Console.WriteLine(counter);
+
             Console.ReadKey();
         }
     }
